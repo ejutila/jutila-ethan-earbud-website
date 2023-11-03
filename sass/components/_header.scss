@@ -1,13 +1,31 @@
 #main-header {
     background-color: black;
+    height: 100px;
 }
 
-.logo {
-    height: 50px;
-    color: darkgrey;
+#navbar {
+    display: none;
 }
 
-.nav-item {
-    display: inline;
-    background-color: grey;
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+    #navbar {
+        padding: 50px;
+        margin: 0 auto;
+        display: contents;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-items li {
+        padding: 20px;
+        margin: 15px;
+        display: inline;
+        font-size: 28px
+    }
+
+    
 }
