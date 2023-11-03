@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, Helvetica, sans-serif;
   font-size: 18px;
@@ -6,3 +10,27 @@ body {
 h2, p {
   margin-bottom: 30px;
 }
+
+#main-header {
+  background-color: black;
+}
+
+.logo {
+  height: 50px;
+  color: darkgrey;
+}
+
+.nav-item {
+  display: inline;
+  background-color: grey;
+}
+
+.box-color {
+  background-color: black;
+  display: block;
+}
+
+.box-color2 {
+  background-color: grey;
+  display: block;
+}/*# sourceMappingURL=main.css.map */
