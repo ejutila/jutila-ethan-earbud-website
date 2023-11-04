@@ -1,3 +1,52 @@
+#contact-form {
+	/* Remove as content will dictate height */
+	height: 580px;
+}
+
+#contact-form h4 {
+	font-size: 24px;
+	color: #064970;
+	text-align: center;
+}
+
+#contact-form input, textarea {
+    padding: 12px;
+    border: 2px solid #d6d6d6;
+    border-radius:  5px;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+    font: inherit;
+	align-self: center;
+}
+
+#contact-form input {
+	font-size: 16px;
+	align-self: center;
+}
+
+#contact-form textarea {
+	font-size: 16px;
+    height: 125px;
+}
+
+#contact-form input[type="submit"] {
+    width: 100px;
+    padding: 10px 14px;
+	margin-top: 10px;
+	background-color: #94D8FF;
+    color: #fff;
+	font-size: 16px;
+    border: none;
+    transition: all 200ms ease-in;
+    align-self: flex-start;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+
 @media (min-width: 1024px) {
     #contact-form {
         grid-column: 8/-1;
@@ -9,10 +58,11 @@
     }
 
     #contact-form h3 {
-        align-self: center;
+        display: flex;
+        justify-content: center;
     }
 
-    #contact-form form {
+    #contact-form form { 
         display: flex;
         flex-direction: column;
     }
@@ -43,7 +93,7 @@
         font-size: 32px;
         border: none;
         transition: all 200ms ease-in;
-        align-self: flex-start;
+        align-self: center;
     }
 
     #contact-form input[type="submit"]:hover {
