@@ -3,10 +3,16 @@
 	height: 580px;
 }
 
-#contact-form h4 {
+#contact-form h3 {
 	font-size: 24px;
 	color: #064970;
 	text-align: center;
+}
+
+#contact-form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #contact-form input, textarea {
@@ -16,12 +22,8 @@
     background-color: #f7f7f7;
     margin-bottom: 30px;
     font: inherit;
-	align-self: center;
-}
-
-#contact-form input {
-	font-size: 16px;
-	align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 #contact-form textarea {
@@ -31,14 +33,13 @@
 
 #contact-form input[type="submit"] {
     width: 100px;
-    padding: 10px 14px;
-	margin-top: 10px;
 	background-color: #94D8FF;
     color: #fff;
 	font-size: 16px;
     border: none;
     transition: all 200ms ease-in;
-    align-self: flex-start;
+    display: flex;
+    align-self: center;
 }
 
 #contact-form input[type="submit"]:hover {
@@ -49,7 +50,6 @@
 
 @media (min-width: 1024px) {
     #contact-form {
-        grid-column: 8/-1;
         /* Remove as content will dictate height */
         font-size: 32px;
         color: #064970;
@@ -60,6 +60,7 @@
     #contact-form h3 {
         display: flex;
         justify-content: center;
+        margin-bottom: 25px;
     }
 
     #contact-form form { 

@@ -47,10 +47,23 @@ h2, p {
   height: 580px;
 }
 
-#contact-form h4 {
+#contact-form h3 {
   font-size: 24px;
   color: #064970;
   text-align: center;
+}
+
+#contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #contact-form input, textarea {
@@ -60,14 +73,12 @@ h2, p {
   background-color: #f7f7f7;
   margin-bottom: 30px;
   font: inherit;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-#contact-form input {
-  font-size: 16px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #contact-form textarea {
@@ -77,16 +88,17 @@ h2, p {
 
 #contact-form input[type=submit] {
   width: 100px;
-  padding: 10px 14px;
-  margin-top: 10px;
   background-color: #94D8FF;
   color: #fff;
   font-size: 16px;
   border: none;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #contact-form input[type=submit]:hover {
@@ -96,11 +108,11 @@ h2, p {
 
 @media (min-width: 1024px) {
   #contact-form {
-    grid-column: 8/-1;
     /* Remove as content will dictate height */
     font-size: 32px;
     color: #064970;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     height: 800px;
   }
   #contact-form h3 {
@@ -110,6 +122,7 @@ h2, p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 25px;
   }
   #contact-form form {
     display: -webkit-box;
@@ -160,4 +173,29 @@ h2, p {
 .box-color2 {
   background-color: grey;
   display: block;
+}
+
+#animation {
+  background-color: aqua;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#model-viewer {
+  background-color: greenyellow;
+  height: 500px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
