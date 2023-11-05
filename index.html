@@ -15,22 +15,34 @@
     <h1 class="hidden"> B-Eats Earbuds Showcase</h1>
     <header id="main-header" class="col-span-full">
         <nav id="navbar">
-            <h2 
-            class="hidden">Navigation</h2>
-            <div id="box-color2" class="logo"></div>
+            <h2 class="hidden">Navigation</h2>
             <ul class="nav-items">
-                <li id="box-color" class="nav-item">Home</li>
-                <li id="box-color" class="nav-item">Earbuds</li>
-                <li id="box-color" class="nav-item">Contact</li>
+                <li class="box-color2 nav-logo">Logo</li>
+                <li class="box-color2 nav-item">Home</li>
+                <li class="box-color2 nav-item">Earbuds</li>
+                <li class="box-color2 nav-item">Contact</li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="animation"class="box-color grid-con"></div>
-        <div id="model-viewer" class="box-color grid-con"></div>
+        <div id="animation" class="box-color2 grid-con">
+            <h3>Scroll Animation</h3>
+        </div>
+        <div id="model-viewer" class="box-color2 grid-con">
+            <h3>Model Viewer</h3>
+        </div>
     </main>
     <footer>
-       <div class="footer"></div>
+        <div id="contact-form">
+            <h3>Contact Form</h3>
+            <form action="email.php" method="POST" enctype="text/plain">
+                <input name="fullName" type="text" placeholder="Enter your name here..">
+                <input name="contactInfo" type="text" required placeholder="Enter your email here..">
+                <input name="subject" type="text" required placeholder="Enter subject here..">
+                <textarea name="msg" placeholder="Enter your message here"></textarea>
+                <input name="submit" type="submit" value="Send">
+            </form>
+        </div>
     </footer>
 </body>
 

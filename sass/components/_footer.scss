@@ -1,0 +1,104 @@
+#contact-form {
+	/* Remove as content will dictate height */
+	height: 580px;
+}
+
+#contact-form h3 {
+	font-size: 24px;
+	color: #064970;
+	text-align: center;
+}
+
+#contact-form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-form input, textarea {
+    padding: 12px;
+    border: 2px solid #d6d6d6;
+    border-radius:  5px;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+    font: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form textarea {
+	font-size: 16px;
+    height: 125px;
+}
+
+#contact-form input[type="submit"] {
+    width: 100px;
+	background-color: #94D8FF;
+    color: #fff;
+	font-size: 16px;
+    border: none;
+    transition: all 200ms ease-in;
+    display: flex;
+    align-self: center;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 1024px) {
+    #contact-form {
+        /* Remove as content will dictate height */
+        font-size: 32px;
+        color: #064970;
+        align-self: center;
+        height: 800px;
+    }
+
+    #contact-form h3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    #contact-form form { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-form input, textarea {
+        padding: 22px;
+        border: 2px solid #d6d6d6;
+        border-radius:  5px;
+        background-color: #f7f7f7;
+        margin-bottom: 30px;
+        font: inherit;
+    }
+
+    #contact-form input {
+        font-size: 24px;
+    }
+
+    #contact-form textarea {
+        font-size: 24px;
+        height: 250px;
+    }
+
+    #contact-form input[type="submit"] {
+        width: 140px;
+        padding: 16px 32px;
+        background-color: #94D8FF;
+        color: #fff;
+        font-size: 32px;
+        border: none;
+        transition: all 200ms ease-in;
+        align-self: center;
+    }
+
+    #contact-form input[type="submit"]:hover {
+        background-color: #0E75B0;
+            border-radius: 10px;
+    }
+}
