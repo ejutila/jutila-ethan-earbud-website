@@ -8,13 +8,9 @@
     display: block;
 }
 
-#animation {
-    background-color: aqua;
-    height: 500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+#explode-view {
+    width: 486px;
+    height: 1000px;
 }
 
 #model-viewer {
@@ -23,4 +19,14 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+    #explode-view {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
 }
