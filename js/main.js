@@ -43,7 +43,10 @@
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.drawImage(images[buds.frame], 0, 0);
     }
-  
+
+})();
+
+(() => {
     //xray view
 
     let imageCon = document.querySelector('#imageCon'),
@@ -84,4 +87,69 @@ function onMove(event) {
         drag.addEventListener('mousedown', onDown);
         document.body.addEventListener('mouseup', onUp);
         document.body.addEventListener('mousemove', onMove);
+
+})();
+
+(() => {
+    //console.log("IIFE Fired");
+    //variables
+    const model = document.querySelector("#model");
+    const hotspots = document.querySelectorAll(".Hotspot");
+  
+    const infoBoxes = [
+      {
+        title: "Noise-cancelling microphones",
+        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience",
+        image: "images/copperinsulation.jpg"
+      }
+    ]
+  
+    //functions
+    function modelLoaded() {
+      //console.log(hotspots);
+      hotspots.forEach(hotspot => {
+        hotspot.style.display = "block";
+      });
+    }
+  
+    function loadInfo() {
+      infoBoxes.forEach((infoBox, index)=>{
+        let selected = document.querySelector(`#hotspot-${index+1}`);
+        //document.createElement ('h2');
+        //.textContent = infoBox.title
+      //document.createElement ('p');
+      //.textContent = infoBox.text
+  
+      console.log(selected);
+      console.log(infoBox.title);
+      console.log(infoBox.text);
+  
+      //selected.appendChild();
+      //selected.appendChild();
+      })
+    }
+    loadInfo();
+  
+    function showInfo() {
+      //console.log(this.slot);
+      //console.log(`#${this.slot}`);
+      //since the slot value matches the id value I can use the slot value as a selector to get to the div I want.
+      let selected = document.querySelector(`#${this.getAttribute("slot")}`);
+      gsap.to(selected, 1, { autoAlpha: 1 });
+    }
+  
+    function hideInfo() {
+      //console.log(this.slot);
+      //console.log(`#${this.slot}`);
+      let selected = document.querySelector(`#${this.getAttribute("slot")}`);
+      gsap.to(selected, 1, { autoAlpha: 0 });
+    }
+  
+    //Event Listener
+    model.addEventListener("load", modelLoaded);
+  
+    hotspots.forEach(function (hotspot) {
+      hotspot.addEventListener("mouseover", showInfo);
+      hotspot.addEventListener("mouseout", hideInfo);
+    });
   })();

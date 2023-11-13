@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>B-Eats Earbuds</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +16,9 @@
         <nav id="navbar">
             <h2 class="hidden">Navigation</h2>
             <ul class="nav-items">
-                <li class="box-color2 nav-logo">Logo</li>
-                <li class="box-color2 nav-item">Home</li>
-                <li class="box-color2 nav-item">Earbuds</li>
-                <li class="box-color2 nav-item">Contact</li>
+                <li class="box-color2 nav-item"><a href="#">Home</a></li>
+                <li class="box-color2 nav-item"><a href="#">Model</a></li>
+                <li class="box-color2 nav-item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -28,6 +26,7 @@
         <canvas id="explode-view">
             <h3 class="hidden">Scroll Earbud Animation</h3>
         </canvas>
+        <h3>Earbuds X-Ray View</h3>
         <div id="mobile-tablet-view">
             <img src="images/xray-whole.jpg" alt="x-ray earbuds">
             <img src="images/whole.jpg" alt="Regular view of ear buds">
@@ -42,6 +41,41 @@
                 <div class="slideImage image-drag"></div>
             </div>
         </div>
+        <model-viewer id="model" src="model/ej-earbuds.gltf"  ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.jpeg" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+              <button class="Hotspot" slot="hotspot-1" data-position="0.08504121671040056m 0.009497777317206718m -0.7312930598333649m" data-normal="0.5554908675263951m -0.19148058558035935m -0.8091755566257396m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation" id="hotspot-1">
+                    <h2>Charging Port</h2>
+                    <p>Reliable, yet fast charging. The battery itself lasts for 14 hours!</p>
+                  </div>
+              </button><button class="Hotspot" slot="hotspot-2" data-position="0.15192777119461323m -0.03813826907203249m -0.23174620038363047m" data-normal="0.9830252459602666m 0.181735665692727m -0.025169696461794157m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation" id="hotspot-2">
+                    <h2>Speaker</h2>
+                    <p>Small speaker, but high quality sound to make sure you hear every detail.</p>
+                  </div>
+              </button><button class="Hotspot" slot="hotspot-3" data-position="-0.22383385694398125m 0.0769838875368532m -0.5379597563023295m" data-normal="-0.999905099081978m 0.0014801687290205306m -0.013696785403652139m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation" id="hotspot-3">
+                    <h2>Touch Media Controls</h2>
+                    <p>Easy to use touch controls to use less of your phone while still having full control of what you're playing.</p>
+                  </div>
+              </button><button class="Hotspot" slot="hotspot-4" data-position="0.12975769623872796m -0.049336263004402386m 0.11300875667332255m" data-normal="0.9293055453294333m 0.09957335705683905m -0.35563513603747887m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation" id="hotspot-4">
+                  <h2>Noise-Cancelling Eartips</h2>
+                  <p>These noise-cancelling eartips create a no-distraction environment for you and your listening pleasure.</p>
+                  </div>
+              </button><button class="Hotspot" slot="hotspot-5" data-position="-0.1743919605779214m 0.5093124954179323m -0.49328052087396845m" data-normal="0.9999139807091203m -0.0009994786555630613m 0.013077928920833357m" data-visible="visible">
+                  <div class="HotspotAnnotation" id="hotspot-5">
+                    <h2>Flexible Ear Hook</h2>
+                    <p>The ear hook of the headphones allows for an easier more secure listening experience with the lack of potentially falling out of your ears.</p>
+                  </div>
+              </button>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="images/ar_hand_prompt.png">
+            </div>
+          </model-viewer>  
     </main>
     <footer>
         <div id="contact-form">
