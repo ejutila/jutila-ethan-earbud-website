@@ -42,15 +42,141 @@ h2, p {
     font-size: 28px;
   }
 }
+#outerShell {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    border: solid 1px #666;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 100vh;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .image-right {
+    background: url(../images/xray-whole.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-left {
+    background: url(../images/whole.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+  }
+  .image-drag {
+    background-color: #666;
+    left: 50%;
+    width: 4px;
+    cursor: pointer;
+  }
+}
+#outerShell {
+  max-width: 1200px;
+  border: solid 1px #666;
+}
+
+#imageCon {
+  position: relative;
+  max-width: 1200px;
+  height: 100vh;
+}
+
+.slideImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.image-right {
+  background: url(../images/xray-whole.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.image-left {
+  background: url(../images/whole.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  background-attachment: fixed;
+}
+
+.image-drag {
+  background-color: #666;
+  left: 50%;
+  width: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1920px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1920px;
+    border: solid 1px #666;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1920px;
+    height: 100vh;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .image-right {
+    background: url(../images/xray-whole.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-left {
+    background: url(../images/whole.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+  }
+  .image-drag {
+    background-color: #666;
+    left: 50%;
+    width: 4px;
+    cursor: pointer;
+  }
+}
 #contact-form {
   /* Remove as content will dictate height */
   height: 580px;
+  margin-top: 100px;
 }
 
 #contact-form h3 {
   font-size: 24px;
   color: #064970;
   text-align: center;
+  margin-top: 50px;
 }
 
 #contact-form form {
@@ -165,6 +291,52 @@ h2, p {
     border-radius: 10px;
   }
 }
+#model-viewer {
+  background-color: greenyellow;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#explode-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 460px;
+  height: 500px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+  #explode-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    height: 1080px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1920px) {
+  #explode-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .box-color {
   background-color: black;
   display: block;
@@ -173,29 +345,4 @@ h2, p {
 .box-color2 {
   background-color: grey;
   display: block;
-}
-
-#animation {
-  background-color: aqua;
-  height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#model-viewer {
-  background-color: greenyellow;
-  height: 500px;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }

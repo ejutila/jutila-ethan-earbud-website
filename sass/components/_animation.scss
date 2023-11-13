@@ -1,0 +1,33 @@
+#model-viewer {
+    background-color: greenyellow;
+    margin-bottom: 50px;
+    display: flex;
+    align-self: center;
+}
+
+#explode-view {
+    display: flex;
+    width: 460px;
+    height: 500px;
+    align-self: center;
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+    #explode-view {
+        display: flex;
+        width: 1200px;
+        height: 1080px;
+        justify-content: center;
+    }
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1920px) {
+    #explode-view {
+        display: flex;
+        width: 1920px;
+        height: 1080px;
+        justify-content: center;
+    }
+}
