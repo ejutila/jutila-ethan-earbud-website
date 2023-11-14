@@ -23,24 +23,30 @@
         </nav>
     </header>
     <main>
-        <canvas id="explode-view">
-            <h3 class="hidden">Scroll Earbud Animation</h3>
-        </canvas>
-        <h3>Earbuds X-Ray View</h3>
-        <div id="mobile-tablet-view">
-            <img src="images/xray-whole.jpg" alt="x-ray earbuds">
-            <img src="images/whole.jpg" alt="Regular view of ear buds">
-        </div>
-        <div id="outerShell">
-            <div id="imageCon">
-                <!-- xray version -->
-                <div class="slideImage image-right"></div>
-                <!-- rendered version -->
-                <div class="slideImage image-left"></div>
-                <!-- drag bar -->
-                <div class="slideImage image-drag"></div>
+        <section class="animation">
+            <canvas id="explode-view">
+                <h3 class="hidden">Scroll Earbud Animation</h3>
+            </canvas>
+        </section>
+        <section class="slider">
+            <h3>Earbuds X-Ray View</h3>
+            <div id="mobile-tablet-view">
+                <img src="images/xray-whole.jpg" alt="x-ray earbuds">
+                <img src="images/whole.jpg" alt="Regular view of ear buds">
             </div>
-        </div>
+            <div id="outerShell">
+                <div id="imageCon">
+                    <!-- xray version -->
+                    <div class="slideImage image-right"></div>
+                    <!-- rendered version -->
+                    <div class="slideImage image-left"></div>
+                    <!-- drag bar -->
+                    <div class="slideImage image-drag"></div>
+                </div>
+            </div>
+        </section>
+        <section class="earbud-model">
+            <h3>Earbuds Model</h3>
         <model-viewer id="model" src="model/ej-earbuds.gltf"  ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.jpeg" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
 
               <button class="Hotspot" slot="hotspot-1" data-position="0.08504121671040056m 0.009497777317206718m -0.7312930598333649m" data-normal="0.5554908675263951m -0.19148058558035935m -0.8091755566257396m" data-visibility-attribute="visible">
@@ -75,7 +81,8 @@
             <div id="ar-prompt">
                 <img src="images/ar_hand_prompt.png">
             </div>
-          </model-viewer>  
+          </model-viewer> 
+        </section> 
     </main>
     <footer>
         <div id="contact-form">
