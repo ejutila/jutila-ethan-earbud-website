@@ -1,4 +1,8 @@
-# jutila-ethan-earbud-website
+# B-Eats Earbuds Website
+
+B-Eats is the new and revolutionizes what a pair of earbuds are. Take a deep dive into the ins and outs of the earbuds
+and find out what the next evolution of earbud technology holds!  See the animation, x-ray model, and model viewer to
+get the inside scoop!
 
 ## Contributing
 
